@@ -1,0 +1,55 @@
+body {
+  background: #333;
+  color: #fff;
+}
+
+.navbar {
+  border-bottom: #808000 5px solid;
+  opacity: 0.8;
+}
+
+#home-section {
+  background: url(../img/showcase.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  background: rgba(0, 0, 0, 0.5);
+}
+#home-section .home-inner {
+  padding-top: 150px;
+}
+
+#home-section .home-img {
+  width: 75%;
+
+  border-color: #808000 3px solid;
+}
+
+#home-section #button-main {
+  margin-top: 288px;
+}
+#about .img1 {
+  max-width: 75%;
+}
+#two .img2 {
+  max-width: 65%;
+}
+video {
+  width: 100%;
+}
+#four .img3 {
+  margin-top: 50px;
+  max-width: 75%;
+}
+#five .img4 {
+  max-width: 100%;
+}
