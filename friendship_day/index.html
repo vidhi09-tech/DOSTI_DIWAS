@@ -183,43 +183,47 @@
       </div>
     </div>
   </footer>
-  <!-- CONTACT MODAL -->
-  <div class="modal fade text-dark" id="contactModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Contact Us
-            <br> <small class="text-muted">it’s just a dummy contact. If you gonna write something, it don't gonna work. In easy words no submission.</small>
-          </h5>
-          
-          
-          <button class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
-          
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea class="form-control"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-warning btn-block">Submit</button>
+ <!-- modal -->
+    <div class="modal fade text-dark" id="contactModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Us</h5>
+            <button class="close" data-dismiss="modal">&times</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="write your full name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="email address"
+                />
+                <small class="form-text text-muted"
+                  >your email will not be shared</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary btn-block">Submit</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
@@ -238,27 +242,29 @@
     ></script>
     <script>
       // Get the current year for the copyright
-      $('#year').text(new Date().getFullYear());
-  
+      $("#year").text(new Date().getFullYear());
+
       // Init Scrollspy
-      $('body').scrollspy({ target: '#main-nav' });
-  
+      $("body").scrollspy({ target: "#main-nav" });
+
       // Smooth Scrolling
-      $("#main-nav a").on('click', function (event) {
+      $("#main-nav a").on("click", function (event) {
         if (this.hash !== "") {
           event.preventDefault();
-  
+
           const hash = this.hash;
-  
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function () {
-  
-            window.location.hash = hash;
-          });
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800,
+            function () {
+              window.location.hash = hash;
+            }
+          );
         }
       });
     </script>
-   
   </body>
 </html>
